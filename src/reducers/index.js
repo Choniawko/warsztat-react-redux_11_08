@@ -8,7 +8,7 @@ function TaskReducer (state = initialState, action) {
                 ...state,
                 {
                     id: action.payload.id,
-                    name: action.payload.name,
+                    name: action.payload.text,
                     done: false
                 }
             ]
