@@ -15,7 +15,10 @@ function TaskReducer (state = initialState, action) {
         case consts.TOGGLE_TASK:
             return state.map((task) => 
             (task.id === action.payload.id) ? { ...task, done: !task.done } : task)
+        default:
+            return state;
     }
+        
 }
 
 export default TaskReducer;
